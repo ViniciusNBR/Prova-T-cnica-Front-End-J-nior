@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* CONFIGURAÇÕES PADRÃO PARA TELAS MAIORES */
+
+div.container{
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background-position-y: -150px;
+    background-image: url(../imagens/ImagemPrincipal.jpg);
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+    color: #228B22;
+    font-size: 3em;
+}
+
+h2{
+    text-align: center;
+    padding-top: 5px;
+    color: #006400;
+    font-size: 1.5;
+}
+
+h3{
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+h5{
+    font-size: 2em;
+}
+
+h6{
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+section.firstsec{
+    width: 100%;
+    height: 450px;
+    background-color: #4F4F4F;
+    color: #fff;
+    
+}
+
+div.box{
+    width: 320px;
+    float:left;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+img.figura1{
+    width: 250px;
+    margin-top: 25px;
+    border: 15px solid #A9A9A9;
+}
+
+img.figura1:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+section.secondsec{
+    width: 100%;
+    height: 500px;
+    background-color: #A9A9A9;
+}
+
+div.foto1{
+    width: 500px;
+    height: 100%;
+    float: left;
+}
+
+img.figura2{
+    width: 380px;
+    border: 20px solid #4F4F4F;
+    margin-top: 65px;
+    margin-left: 75px;
+    margin-right: 30px;
+    border-radius: 500px;
+}
+
+div.lateral{
+    width: 700px;
+    color: #fff;
+    float: left;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+footer{
+    clear: both;
+    background-color: #4F4F4F;
+    height: 70px; 
+}
+
+p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.8em;
+    color: #fff;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+/* RESPONSIVIDADE PARA TELAS MENORES */
+
+@media screen and (max-width: 600px){
+    div.container{
+        width: 100%;
+    }
+    header{
+        background-image: url(../imagens/ImagemPrincipal.jpg);
+        background-size: 100%;
+        background-color: #4F4F4F;
+        background-position-y: 130px;
+        height: 520px;
+        
+    }
+   
+    h1, h2{
+        color: #fff;
+    }
+    
+    h1{
+        font-size: 3.5em;
+    }
+    
+    h2, h4, h6{
+        font-size: 1.5em;
+    }
+    
+    h3, h5{
+        font-size: 2.0em;
+    }
+    
+    div.box, div.foto1, div.lateral{
+       float: none;
+       width: 100%;
+       margin: 0;
+    }
+    
+    section.firstsec{
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    
+    img.figura1{
+        width: 80%;  
+    }
+    
+    section.secondsec{
+        height: auto;
+    }
+    
+    div.foto1{
+        height: auto;
+    }
+    
+    img.figura2{
+        width: 70%;
+    }
+    
+    div.lateral{
+        text-align: center;
+    }
+}
